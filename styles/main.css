@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.padSliders {
+    margin: 15px 50px;
+}
+
+label {
+    padding-left: 25px;
+}
+
+.states :hover {
+    fill: lightgreen;
+}
+
+.state-borders {
+    fill: none;
+    stroke: #000;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.state-selected {
+    fill: green;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    font: 12px sans-serif;
+    background: white;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+input.ui-slider-input {
+    width: 50px;
+}
+
+.ui-rangeslider-sliders {
+    margin: 0 80px !important;
+}

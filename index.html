@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <title>University Visualizations</title>
+
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+    </head>
+
+    <body>
+        <h1>University Visualizations</h1>
+
+        <svg id="interactive"></svg>
+
+        <div class="padSliders" data-role="rangeslider">
+            <label for="ug-min">Undergraduate Population Range:</label>
+            <input type="range" name="ug-min" min=0 max=100 value=0 id="ug-min">
+            <input type="range" name="ug-max" min=0 max=100 value=100 id="ug-max">
+        </div>
+
+        <div class="padSliders" data-role="rangeslider">
+            <label for="cost-min">Cost for Attendance:</label>
+            <input type="range" name="cost-min" min=0 max=100 value=0 id="cost-min">
+            <input type="range" name="cost-max" min=0 max=100 value=100 id="cost-max">
+        </div>
+
+        <div class="padSliders" data-role="rangeslider">
+            <label for="earn-min">Mean Earnings (When Not Working) After 10 Years:</label>
+            <input type="range" name="earn-min" min=0 max=100 value=0 id="earn-min">
+            <input type="range" name="earn-max" min=0 max=100 value=100 id="earn-max">
+        </div>
+
+        <!-- temporary breaks -->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h1>Mean Earnings (After 10-years) vs Unemployment Rate</h1>
+
+        <svg id="static"></svg>
+
+        <!-- temporary breaks -->
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <script src="app.js"></script>
+    </body>
+</html>
