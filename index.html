@@ -18,41 +18,43 @@
     <body>
         <h1>University Visualizations</h1>
 
-        <svg id="interactive"></svg>
+        <section>
+            <div id="container">
+                <div class="subsection">
+                    <svg id="interactive"></svg>
+                </div>
 
-        <div class="padSliders" data-role="rangeslider">
-            <label for="ug-min">Undergraduate Population Range:</label>
-            <input type="range" name="ug-min" min=0 max=100 value=0 id="ug-min">
-            <input type="range" name="ug-max" min=0 max=100 value=100 id="ug-max">
-        </div>
+                <div class="subsection">
+                    <h4>Color Legend (Undergraduate Population):</h4>
+                    <ul id="legend"></ul>
+                </div>
+            </div>
 
-        <div class="padSliders" data-role="rangeslider">
-            <label for="cost-min">Cost for Attendance:</label>
-            <input type="range" name="cost-min" min=0 max=100 value=0 id="cost-min">
-            <input type="range" name="cost-max" min=0 max=100 value=100 id="cost-max">
-        </div>
+            <div class="padSliders" data-role="rangeslider">
+                <label for="ug-min">Undergraduate Population Range:</label>
+                <input type="range" name="ug-min" min=0 max=100 value=0 id="ug-min">
+                <input type="range" name="ug-max" min=0 max=100 value=100 id="ug-max">
+            </div>
 
-        <div class="padSliders" data-role="rangeslider">
-            <label for="earn-min">Mean Earnings (When Not Working) After 10 Years:</label>
-            <input type="range" name="earn-min" min=0 max=100 value=0 id="earn-min">
-            <input type="range" name="earn-max" min=0 max=100 value=100 id="earn-max">
-        </div>
+            <div class="padSliders" data-role="rangeslider">
+                <label for="cost-min">Cost for Attendance:</label>
+                <input type="range" name="cost-min" min=0 max=100 value=0 id="cost-min">
+                <input type="range" name="cost-max" min=0 max=100 value=100 id="cost-max">
+            </div>
 
-        <!-- temporary breaks -->
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+            <div class="padSliders" data-role="rangeslider">
+                <label for="earn-min">Mean Earnings (When Not Working) After 10 Years:</label>
+                <input type="range" name="earn-min" min=0 max=100 value=0 id="earn-min">
+                <input type="range" name="earn-max" min=0 max=100 value=100 id="earn-max">
+            </div>
+
+        </section>
 
         <h1>Mean Earnings (After 10-years) vs Unemployment Rate</h1>
 
-        <svg id="static"></svg>
-
-        <!-- temporary breaks -->
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <section>
+            <svg id="static"></svg>
+        </section>
 
         <script src="app.js"></script>
     </body>

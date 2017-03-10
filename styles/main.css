@@ -1,4 +1,4 @@
-h1 {
+h1, h4 {
     text-align: center;
 }
 
@@ -12,16 +12,32 @@ svg {
     margin: auto;
 }
 
+#container {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+.subsection {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+ul {
+    display: block;
+    width: 200px;
+    margin: auto;
+    list-style-type: none;
+}
+
 .padSliders {
     margin: 15px 50px;
 }
 
 label {
     padding-left: 25px;
-}
-
-.states :hover {
-    fill: lightgreen;
 }
 
 .state-borders {
@@ -32,7 +48,7 @@ label {
 }
 
 .state-selected {
-    fill: green;
+    fill: lightgreen;
 }
 
 .tooltip {
@@ -50,4 +66,14 @@ input.ui-slider-input {
 
 .ui-rangeslider-sliders {
     margin: 0 80px !important;
+}
+
+@media screen and (max-width: 1076px) {
+    .subsection {
+        display: block;
+    }
+
+    ul {
+        margin-bottom: 50px;
+    }
 }
