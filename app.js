@@ -77,7 +77,7 @@ svg.call(zoom);
 // handle data parsing
 d3.queue()
   .defer(d3.json, "data/us.json")
-  .defer(d3.json, "data/CleanedData.json")
+  .defer(d3.csv, "data/CleanedData2.csv")
   .await(ready);
 
 function draw() {
